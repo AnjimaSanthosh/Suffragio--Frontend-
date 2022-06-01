@@ -1,0 +1,15 @@
+$(document).ready(function(){ 
+    $("#adminLogin").validate({
+        rules:{
+            adminMail:{
+                    required:true,
+                    email:true
+            },
+            admin_password:{
+                required:true,
+                minlength:3,
+                maxlength:10 
+            },
+        },
+    })
+})
